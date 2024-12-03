@@ -8,11 +8,11 @@ import { Theme } from "@radix-ui/themes";
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <html>
-			<body>
-				<Theme>
-					<App />
-				</Theme>
-			</body>
-		</html>
+		<body>
+			<Theme>
+				<App />
+			</Theme>
+		</body>
+	</html>
   </StrictMode>,
 )

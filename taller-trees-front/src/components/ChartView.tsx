@@ -1,4 +1,4 @@
-import { Text } from "@radix-ui/themes";
+import { Container, Flex, Text } from "@radix-ui/themes";
 import React, { useEffect, useState } from "react"
 
 interface AveragePriceData {
@@ -29,12 +29,11 @@ const ChartView: React.FC = () => {
 
     return (
         <>
-            <div>
-                <h1>Fetched Data:</h1>
+            <Container>
                 {loading ? (
-                    <p>Loading...</p> // Loading indicator
+                    <Text align={'center'}>Loading...</Text>
                 ) : (
-                    <div>
+                    <Flex direction="column" gap="2">
                         {data ? (
                             <>
                                 <Text>Streets with tall trees: {data.tall}</Text>
@@ -43,9 +42,9 @@ const ChartView: React.FC = () => {
                         ) : (
                             <p>No data available</p>
                         )}
-                    </div>
+                    </Flex>
                 )}
-            </div>
+            </Container>
         </>
     )
 }
