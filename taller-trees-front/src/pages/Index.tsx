@@ -1,4 +1,4 @@
-import { Container, Flex, Text} from "@radix-ui/themes";
+import { Container, Flex} from "@radix-ui/themes";
 import HeroBanner from '../components/HeroBanner';
 import ChartView from "../components/ChartView";
 

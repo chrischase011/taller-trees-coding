@@ -20,6 +20,7 @@ const App = () => {
               <Route key={index} path={path} element={React.createElement(component)} />
             ))}
           </Routes>
+          
         </main>
 
         <footer className="bg-gradient-to-r from-pink-500 to-blue-500 p-4 text-center text-white">
